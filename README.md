@@ -1,7 +1,7 @@
 Password Manager
 ==================
 
-This is an Android application to manage my passwords
+This is an Android application and bash script to manage my passwords
 ##Usage
 This app is very simple. To use enter your password and the name of the site.
 Then click the "Generate Password" button to generate your password.
@@ -14,7 +14,7 @@ The application automatically places your generated password into your copy buff
 Unlike a lot of password manager applications this application uses no connection to the internet
 and doesn't store your password.
 The application takes your secret password and concatenates it with the name of the site
-and then runs thats string through MD5 hash algorithm.
-The app then takes the first 10 characters of the MD5 hash and places that into your copy buffer.
+and then runs thats string through SHA1 hash algorithm.
+The app then takes the first 10 characters of the SHA1 hash and places that into your copy buffer.
 
 
