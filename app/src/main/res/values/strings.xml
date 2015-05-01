@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Password</string>
+    <string name="Cancel">Cancel</string>
+    <string name="setLength">Set Length</string>
+    <string name="setStart">Set Starting Position</string>
+
+</resources>

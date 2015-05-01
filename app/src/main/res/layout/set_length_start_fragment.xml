@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="22dp"
+        android:layout_gravity="center"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="219dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/setLength"
+                android:id="@+id/Title"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:gravity="center|center_vertical|top"
+                android:layout_gravity="center_vertical" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="right">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right">
+
+                <NumberPicker
+                    android:layout_width="210dp"
+                    android:layout_height="267dp"
+                    android:id="@+id/NumberPicker"
+                    android:gravity="right"
+                    android:layout_below="@+id/linearLayout1"
+                    android:layout_alignLeft="@+id/NumberPicker"
+                    android:layout_alignStart="@+id/NumberPicker" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
