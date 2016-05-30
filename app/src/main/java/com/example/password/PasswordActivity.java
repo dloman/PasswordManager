@@ -79,6 +79,7 @@ public class PasswordActivity extends FragmentActivity implements StartLengthPic
 		String Input= ((EditText) findViewById(R.id.password)).getText().toString().trim();
 		Input += ((EditText) findViewById(R.id.website)).getText().toString().trim();
 		Input += "\n";
+        Input = Input.replaceAll("\\s+","");
 		String Password = SHA1(Input);
 		Password = Password.substring(mStartPosition, mStartPosition + mLength).toLowerCase();
 		Password = AddSpecialCharactersAndCapitalLetter(Password);
