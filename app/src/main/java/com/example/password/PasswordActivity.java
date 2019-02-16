@@ -1,4 +1,4 @@
-package com.example.password;
+package com.exmaple.password;
 
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
